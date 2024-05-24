@@ -9,9 +9,18 @@
 <body>
     <h1>HTML Tycoon</h1>
 
-    <p id="total">Total: <scan id="total_amount">0</scan></p>
-    <button type="button" onclick="main_click()">uwu</button>
+    <p id="total">Total HTMLs: <scan id="total_amount">0</scan></p> 
+    <p id="money">Bank: <scan id="money_amount">$1000.0</scan></p>
+    <button type="button" onclick="main_button_click()">Write HTML: -<scan id="main_button_price">$1.00</scan></button>
 
+    <br><br>
+
+    <p id="price">Cost: <scan id="price_amount">0</scan></p>
+    <button type="button" onclick="change_price(1)">Rise</button>
+    <button type="button" onclick="change_price(-1)">Fall</button>
+    <br>
+    <button type="button" onclick="update()">Hallo :D</button>
+    
 
     <script src="index.js"></script>
 </body>
