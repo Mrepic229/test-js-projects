@@ -1,0 +1,58 @@
+:root {
+    --background-color: #A3C3D9;
+    --heading-color: #993955;
+    --box_color: #AE76A6;
+    --total_color: rgb(43, 114, 84);
+    --total_color-dark: rgb(35, 92, 68);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+h1 {
+    color: var(--heading-color);
+    font-size: 3em;
+    text-align: center;
+}
+form {
+    background-color: var(--box_color);
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    font-size: 2em;
+    font-weight: bold;
+}
+input {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px;
+}
+button {
+    background-color: var(--total_color);
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--total_color-dark);
+}
+#total {
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--total_color);
+}
+#total-amount {
+    color: black;
+}
