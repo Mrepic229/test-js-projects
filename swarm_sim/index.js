@@ -1,4 +1,4 @@
-var number_of_meat = 10;
+var number_of_meat = 35;
 
 var number_of_drones = 0; 
 var drone_multiplyer = 1;
@@ -23,6 +23,11 @@ function update_drone(){
 function buy_drone() {
     const number_of_meat_id = document.getElementById("number_of_meat");
     const number_of_drones_id = document.getElementById("number_of_drones");
+
+    if (number_of_meat - drone_price < 0) {
+        return;
+    }
+
     number_of_drones += 1;
     number_of_meat += -drone_price;
 
