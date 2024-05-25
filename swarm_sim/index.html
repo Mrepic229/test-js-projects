@@ -11,25 +11,39 @@
 <body>
     <h1>Hive Sim</h1>
 
-    <div id="main_body">
+    <div id="section">
         <p>
-            Meat: <scan id="number_of_meat">10</scan>
+            Meat: <scan id="number_of_meat">35</scan>
         </p>
     </div>
-    <div id="main_body">
-        <p>
-        <div id="bold"> Drones: <scan id="number_of_drones">0</scan>
-        </div>
+
+    <div id="section">
+        <div> Drones: <scan id="number_of_drones">0</scan></div>
         <br>
-        <div id="bold">
-            Buy Drone: <button id="buy_drone" type="button" onclick="buy_drone()">
+        <div>
+            Buy Drone: <button id="buy_drones" type="button" onclick="buy_drones()">
                 <scan id="drone_price">10</scan> Meat
             </button>
+            <button id="buy_drones" type="button" onclick="buy_max_drones()">
+                Buy Max
+            </button>
         </div>
-        </p>
     </div>
 
-    <script src="index.js"></script>
-</body>
+    <div id="section">
+        <div> Queens: <scan id="number_of_queens">0</scan></div>
+        <br>
+        <div>
+            Buy Drone: <button id="buy_queens" type="button" onclick="buy_queens()">
+                <scan id="queen_price">100</scan> Drones
+            </button>
+            <button id="buy_drones" type="button" onclick="buy_max_queens()">
+                Buy Max
+            </button>
+        </div>
+    </div>
 
+    <script type="module" src="./src/index.js"></script>
+
+</body>
 </html>
